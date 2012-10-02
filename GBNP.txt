@@ -272,8 +272,8 @@ P: 147[1-9]                      SERVICE
 T: N
 U: Y
 
-# 1800X
-P: 1800X                         SERVICE
+# 18000
+P: 18000                         SERVICE
 T: N
 U: Y
 
@@ -389,6 +389,11 @@ P: 141                           SPECIAL-SERVICE
 P: !                             SUBSCRIBER
 T: N
 
+# 1800[1-9]+!
+P: 1800[1-9]                     SPECIAL-SERVICE
+P: !                             SUBSCRIBER
+T: N
+
 # 11600[06]
 P: 11600[06]                     SPECIAL-SERVICE
 T: N
@@ -403,6 +408,10 @@ T: N
 
 # 141
 P: 141                           SPECIAL-SERVICE
+T: N
+
+# 1800[1-9]
+P: 1800[1-9]                     SPECIAL-SERVICE
 T: N
 
 # 112
