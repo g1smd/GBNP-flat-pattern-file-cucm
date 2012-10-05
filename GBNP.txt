@@ -3,6 +3,9 @@
 # W:  Network Specific Facilities -- OP or OPXXXX(alternate carriers)
 # U: Urgent pattern? (Call extended immediately on match)
 
+
+# Local Calls
+
 # [2-9]XXXXXXX
 P: [2-9]XXXXXXX                  LOCAL-8-DIGIT
 
@@ -19,7 +22,7 @@ P: [2-9]XXXX                     LOCAL-5-DIGIT
 P: [23]XXX                       LOCAL-4-DIGIT
 
 
-# Long Distance Calls
+# Long Distance Calls - 10 digits
 
 # 0+11[3-8]+[2-9]XXXXXX
 P: 0                             NATIONAL-ACCESS
@@ -61,11 +64,6 @@ P: 0                             NATIONAL-ACCESS
 P: 29                            AREA-CODE
 P: 2XXXXXXX                      SUBSCRIBER
 
-# 0+3[0347]X+XXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 3[0347]X                      AREA-CODE
-P: XXXXXXX                       SUBSCRIBER
-
 # 0+13873+[2-9]XXXX
 P: 0                             NATIONAL-ACCESS
 P: 13873                         5DIGIT-SPECIALAREA-CODE
@@ -90,13 +88,6 @@ P: 1697[347]                     5DIGIT-SPECIALAREA-CODE
 P: [2-9]XXXX                     SUBSCRIBER
 T: N
 
-# 0+16977+[23]XXX
-P: 0                             NATIONAL-ACCESS
-P: 16977                         5DIGIT-SPECIALAREA-CODE
-P: [23]XXX                       SUBSCRIBER
-T: N
-U: Y
-
 # 0+1768[347]+[2-9]XXXX
 P: 0                             NATIONAL-ACCESS
 P: 1768[347]                     5DIGIT-SPECIALAREA-CODE
@@ -107,6 +98,565 @@ T: N
 P: 0                             NATIONAL-ACCESS
 P: 19467                         5DIGIT-SPECIALAREA-CODE
 P: [2-9]XXXX                     SUBSCRIBER
+T: N
+
+# 0+13873+[2-9]XXXX
+P: 0                             NATIONAL-ACCESS
+P: 13873                         AREA-CODE
+P: [2-9]XXXX                     SUBSCRIBER
+T: N
+
+# 0+15242+[2-9]XXXX
+P: 0                             NATIONAL-ACCESS
+P: 15242                         AREA-CODE
+P: [2-9]XXXX                     SUBSCRIBER
+T: N
+
+# 0+1539[456]+[2-9]XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1539[456]                     AREA-CODE
+P: [2-9]XXXX                     SUBSCRIBER
+T: N
+
+# 0+1697[347]+[2-9]XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1697[347]                     AREA-CODE
+P: [2-9]XXXX                     SUBSCRIBER
+T: N
+
+# 0+1768[347]+[2-9]XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1768[347]                     AREA-CODE
+P: [2-9]XXXX                     SUBSCRIBER
+T: N
+
+# 0+19467+[2-9]XXXX
+P: 0                             NATIONAL-ACCESS
+P: 19467                         AREA-CODE
+P: [2-9]XXXX                     SUBSCRIBER
+T: N
+
+
+# Long Distance Calls - 9 digits
+
+# 0+16977+[23]XXX
+P: 0                             NATIONAL-ACCESS
+P: 16977                         5DIGIT-SPECIALAREA-CODE
+P: [23]XXX                       SUBSCRIBER
+T: N
+U: Y
+
+# 0+16977+[23]XXX
+P: 0                             NATIONAL-ACCESS
+P: 16977                         AREA-CODE
+P: [23]XXX                       SUBSCRIBER
+T: N
+U: Y
+
+# 0+1204+6[1-4]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1204                          AREA-CODE
+P: 6[1-4]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1208+7[2-9]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1208                          AREA-CODE
+P: 7[2-9]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1254+5[1-79]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1254                          AREA-CODE
+P: 5[1-79]XXX                    SUBSCRIBER
+U: Y
+
+# 0+1276+2XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1276                          AREA-CODE
+P: 2XXXX                         SUBSCRIBER
+U: Y
+
+# 0+1276+3[1-8]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1276                          AREA-CODE
+P: 3[1-8]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1276+6[1-6]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1276                          AREA-CODE
+P: 6[1-6]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1297+2[0-4]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1297                          AREA-CODE
+P: 2[0-4]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1297+3[2-5]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1297                          AREA-CODE
+P: 3[2-5]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1298+2[2-8]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1298                          AREA-CODE
+P: 2[2-8]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1298+7[0-47-9]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1298                          AREA-CODE
+P: 7[0-47-9]XXX                  SUBSCRIBER
+U: Y
+
+# 0+1298+8[3-5]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1298                          AREA-CODE
+P: 8[3-5]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1363+8[2-5]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1363                          AREA-CODE
+P: 8[2-5]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1364+7[23]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1364                          AREA-CODE
+P: 7[23]XXX                      SUBSCRIBER
+U: Y
+
+# 0+1384+7[04-9]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1384                          AREA-CODE
+P: 7[04-9]XXX                    SUBSCRIBER
+U: Y
+
+# 0+1386+4[0157-9]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1386                          AREA-CODE
+P: 4[0157-9]XXX                  SUBSCRIBER
+U: Y
+
+# 0+1404+4[1-7]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1404                          AREA-CODE
+P: 4[1-7]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1420+2[23]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1420                          AREA-CODE
+P: 2[23]XXX                      SUBSCRIBER
+U: Y
+
+# 0+1420+8XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1420                          AREA-CODE
+P: 8XXXX                         SUBSCRIBER
+U: Y
+
+# 0+1460+30XXX
+P: 0                             NATIONAL-ACCESS
+P: 1460                          AREA-CODE
+P: 30XXX                         SUBSCRIBER
+U: Y
+
+# 0+1460+5[2-57]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1460                          AREA-CODE
+P: 5[2-57]XXX                    SUBSCRIBER
+U: Y
+
+# 0+1460+6[1-8]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1460                          AREA-CODE
+P: 6[1-8]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1460+7[2-8]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1460                          AREA-CODE
+P: 7[2-8]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1461+40XXX
+P: 0                             NATIONAL-ACCESS
+P: 1461                          AREA-CODE
+P: 40XXX                         SUBSCRIBER
+U: Y
+
+# 0+1480+52XXX
+P: 0                             NATIONAL-ACCESS
+P: 1480                          AREA-CODE
+P: 52XXX                         SUBSCRIBER
+U: Y
+
+# 0+1488+7[1-3]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1488                          AREA-CODE
+P: 7[1-3]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1524+3[2-79]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1524                          AREA-CODE
+P: 3[2-79]XXX                    SUBSCRIBER
+U: Y
+
+# 0+1524+6XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1524                          AREA-CODE
+P: 6XXXX                         SUBSCRIBER
+U: Y
+
+# 0+1527+6XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1527                          AREA-CODE
+P: 6XXXX                         SUBSCRIBER
+U: Y
+
+# 0+1562+6[06-9]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1562                          AREA-CODE
+P: 6[06-9]XXX                    SUBSCRIBER
+U: Y
+
+# 0+1566+86XXX
+P: 0                             NATIONAL-ACCESS
+P: 1566                          AREA-CODE
+P: 86XXX                         SUBSCRIBER
+U: Y
+
+# 0+1606+4XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1606                          AREA-CODE
+P: 4XXXX                         SUBSCRIBER
+U: Y
+
+# 0+1606+7[4-79]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1606                          AREA-CODE
+P: 7[4-79]XXX                    SUBSCRIBER
+U: Y
+
+# 0+1629+5[5-7]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1629                          AREA-CODE
+P: 5[5-7]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1635+[34]XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1635                          AREA-CODE
+P: [34]XXXX                      SUBSCRIBER
+U: Y
+
+# 0+1647+24XXX
+P: 0                             NATIONAL-ACCESS
+P: 1647                          AREA-CODE
+P: 24XXX                         SUBSCRIBER
+U: Y
+
+# 0+1647+61XXX
+P: 0                             NATIONAL-ACCESS
+P: 1647                          AREA-CODE
+P: 61XXX                         SUBSCRIBER
+U: Y
+
+# 0+1659+5[08]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1659                          AREA-CODE
+P: 5[08]XXX                      SUBSCRIBER
+U: Y
+
+# 0+1659+6[67]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1659                          AREA-CODE
+P: 6[67]XXX                      SUBSCRIBER
+U: Y
+
+# 0+1659+74XXX
+P: 0                             NATIONAL-ACCESS
+P: 1659                          AREA-CODE
+P: 74XXX                         SUBSCRIBER
+U: Y
+
+# 0+1695+5[0-4]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1695                          AREA-CODE
+P: 5[0-4]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1726+6[13-9]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1726                          AREA-CODE
+P: 6[13-9]XXX                    SUBSCRIBER
+U: Y
+
+# 0+1726+7[0-7]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1726                          AREA-CODE
+P: 7[0-7]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1744+2XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1744                          AREA-CODE
+P: 2XXXX                         SUBSCRIBER
+U: Y
+
+# 0+1750+2[0-3]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1750                          AREA-CODE
+P: 2[0-3]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1750+[3-68]2XXX
+P: 0                             NATIONAL-ACCESS
+P: 1750                          AREA-CODE
+P: [3-68]2XXX                    SUBSCRIBER
+U: Y
+
+# 0+1750+76XXX
+P: 0                             NATIONAL-ACCESS
+P: 1750                          AREA-CODE
+P: 76XXX                         SUBSCRIBER
+U: Y
+
+# 0+1768+88[234678]XX
+P: 0                             NATIONAL-ACCESS
+P: 1768                          AREA-CODE
+P: 88[234678]XX                  SUBSCRIBER
+U: Y
+
+# 0+1827+[56]XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1827                          AREA-CODE
+P: [56]XXXX                      SUBSCRIBER
+U: Y
+
+# 0+1837+5[2-5]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1837                          AREA-CODE
+P: 5[2-5]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1837+8[239]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1837                          AREA-CODE
+P: 8[239]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1884+3[2-58]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1884                          AREA-CODE
+P: 3[2-58]XXX                    SUBSCRIBER
+U: Y
+
+# 0+1900+6[1-8]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1900                          AREA-CODE
+P: 6[1-8]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1900+85XXX
+P: 0                             NATIONAL-ACCESS
+P: 1900                          AREA-CODE
+P: 85XXX                         SUBSCRIBER
+U: Y
+
+# 0+1905+2XXXX
+P: 0                             NATIONAL-ACCESS
+P: 1905                          AREA-CODE
+P: 2XXXX                         SUBSCRIBER
+U: Y
+
+# 0+1935+83XXX
+P: 0                             NATIONAL-ACCESS
+P: 1935                          AREA-CODE
+P: 83XXX                         SUBSCRIBER
+U: Y
+
+# 0+1946+6[1-8]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1946                          AREA-CODE
+P: 6[1-8]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1949+2[01]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1949                          AREA-CODE
+P: 2[01]XXX                      SUBSCRIBER
+U: Y
+
+# 0+1949+81XXX
+P: 0                             NATIONAL-ACCESS
+P: 1949                          AREA-CODE
+P: 81XXX                         SUBSCRIBER
+U: Y
+
+# 0+1963+23XXX
+P: 0                             NATIONAL-ACCESS
+P: 1963                          AREA-CODE
+P: 23XXX                         SUBSCRIBER
+U: Y
+
+# 0+1963+3[1-4]XXX
+P: 0                             NATIONAL-ACCESS
+P: 1963                          AREA-CODE
+P: 3[1-4]XXX                     SUBSCRIBER
+U: Y
+
+# 0+1995+61XXX
+P: 0                             NATIONAL-ACCESS
+P: 1995                          AREA-CODE
+P: 61XXX                         SUBSCRIBER
+U: Y
+
+
+# Non-geographic Numbers Charged at Geographic Rates
+
+# 0+3[0347]X+XXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 3[0347]X                      AREA-CODE
+P: XXXXXXX                       SUBSCRIBER
+
+# 0+3[0347]XXXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 3[0347]XXXXXXXX               03-NUMBER
+T: N
+
+
+# VoIP, Corporate, Personal and Pager Numbers
+
+# 0+55XXXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 55XXXXXXXX                    CORPORATE-NUMBER
+T: N
+
+# 0+56XXXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 56XXXXXXXX                    VOIP-NUMBER
+T: N
+
+# 0+70+XXXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 70                            PERSONAL-ACCESS
+P: XXXXXXXX                      PERSONAL-SUBSCRIBER
+T: N
+
+# 0+76+XXXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 76                            PAGING-ACCESS
+P: XXXXXXXX                      PAGING-SUBSCRIBER
+T: N
+
+
+# Mobile Numbers
+
+# 0+7[1-5789]XX+XXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 7[1-5789]XX                   MOBILE-ACCESS
+P: XXXXXX                        MOBILE-SUBSCRIBER
+T: N
+
+# 0+7624+XXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 7624                          MOBILE-ACCESS
+P: XXXXXX                        MOBILE-SUBSCRIBER
+T: N
+
+
+# Non-geographic Numbers - 10 digits
+
+# 0+80[08]XXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 80[08]XXXXXXX                 FREEPHONE-NUMBER
+T: N
+
+# 0+84[2-4]+XXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 84[2-4]                       LOCALRATE-ACCESS
+P: XXXXXXX                       LOCALRATE-SUBSCRIBER
+T: N
+
+# 0+845+XXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 845                           LOCALRATE-ACCESS
+P: XXXXXXX                       LOCALRATE-SUBSCRIBER
+T: N
+
+# 0+870+XXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 870                           LOCALRATE-ACCESS
+P: XXXXXXX                       LOCALRATE-SUBSCRIBER
+T: N
+
+# 0+87[1-3]+XXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 87[1-3]                       NATIONALRATE-ACCESS
+P: XXXXXXX                       NATIONALRATE-SUBSCRIBER
+T: N
+
+# 0+82XXXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 82XXXXXXXX                    BROADBAND-SERVICE
+T: N
+
+
+# Non-geographic Numbers - 9 digits
+
+# 0+500XXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 500XXXXXX                     FREEPHONE-NUMBER
+T: N
+
+# 0+800XXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 800XXXXXX                     FREEPHONE-NUMBER
+T: N
+
+
+# Non-geographic Numbers - 7 digits
+
+# 0+8001111
+P: 0                             NATIONAL-ACCESS
+P: 8001111                       FREEPHONE-NUMBER
+T: N
+
+# 0+845+464X
+P: 0                             NATIONAL-ACCESS
+P: 845                           LOCALRATE-ACCESS
+P: 464X                          LOCALRATE-SUBSCRIBER
+T: N
+
+
+# Premium Rate Numbers
+
+# 0+90[0-7]XXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 90[0-7]XXXXXXX                PREMIUM-RATE-NUMBER
+T: N
+
+# 0+90[89]XXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 90[89]XXXXXXX                 PREMIUM-RATE-ADULT-SERVICES
+T: N
+
+# 0+91XXXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 91XXXXXXXX                    PREMIUM-RATE-NUMBER
+T: N
+
+# 0+98XXXXXXXX
+P: 0                             NATIONAL-ACCESS
+P: 98XXXXXXXX                    PREMIUM-RATE-ADULT-SERVICES
 T: N
 
 
@@ -300,7 +850,7 @@ P: !                             NATIONAL-NUMBER
 P: #                             END-OF-DIALING
 
 
-# Services, Mobile & Non Geographic Calls
+# Services
 
 # 1[579]X
 P: 1[579]X                       SERVICE
@@ -336,120 +886,6 @@ U: Y
 P: 18000                         SERVICE
 T: N
 U: Y
-
-# 0+82XXXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 82XXXXXXXX                    BROADBAND-SERVICE
-T: N
-
-# 0+500XXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 500XXXXXX                     FREEPHONE-NUMBER
-T: N
-
-# 0+80[08]XXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 80[08]XXXXXXX                 FREEPHONE-NUMBER
-T: N
-
-# 0+800XXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 800XXXXXX                     FREEPHONE-NUMBER
-T: N
-
-# 0+7[1-5789]XX+XXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 7[1-5789]XX                   MOBILE-ACCESS
-P: XXXXXX                        MOBILE-SUBSCRIBER
-T: N
-
-# 0+7624+XXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 7624                          MOBILE-ACCESS
-P: XXXXXX                        MOBILE-SUBSCRIBER
-T: N
-
-# 0+87[1-3]+XXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 87[1-3]                       NATIONALRATE-ACCESS
-P: XXXXXXX                       NATIONALRATE-SUBSCRIBER
-T: N
-
-# 0+84[2-4]+XXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 84[2-4]                       LOCALRATE-ACCESS
-P: XXXXXXX                       LOCALRATE-SUBSCRIBER
-T: N
-
-# 0+845+XXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 845                           LOCALRATE-ACCESS
-P: XXXXXXX                       LOCALRATE-SUBSCRIBER
-T: N
-
-# 0+870+XXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 870                           LOCALRATE-ACCESS
-P: XXXXXXX                       LOCALRATE-SUBSCRIBER
-T: N
-
-# 0+3[0347]XXXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 3[0347]XXXXXXXX               03-NUMBER
-T: N
-
-# 0+76+XXXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 76                            PAGING-ACCESS
-P: XXXXXXXX                      PAGING-SUBSCRIBER
-T: N
-
-# 0+70+XXXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 70                            PERSONAL-ACCESS
-P: XXXXXXXX                      PERSONAL-SUBSCRIBER
-T: N
-
-# 0+55XXXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 55XXXXXXXX                    CORPORATE-NUMBER
-T: N
-
-# 0+56XXXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 56XXXXXXXX                    VOIP-NUMBER
-T: N
-
-# 0+90[0-7]XXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 90[0-7]XXXXXXX                PREMIUM-RATE-NUMBER
-T: N
-
-# 0+90[89]XXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 90[89]XXXXXXX                 PREMIUM-RATE-ADULT-SERVICES
-T: N
-
-# 0+91XXXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 91XXXXXXXX                    PREMIUM-RATE-NUMBER
-T: N
-
-# 0+98XXXXXXXX
-P: 0                             NATIONAL-ACCESS
-P: 98XXXXXXXX                    PREMIUM-RATE-ADULT-SERVICES
-T: N
-
-# 0+8001111
-P: 0                             NATIONAL-ACCESS
-P: 8001111                       FREEPHONE-NUMBER
-T: N
-
-# 0+845+464X
-P: 0                             NATIONAL-ACCESS
-P: 845                           LOCALRATE-ACCESS
-P: 464X                          LOCALRATE-SUBSCRIBER
-T: N
 
 # 118XXX
 P: 118XXX                        DIRECTORY-SERVICE
@@ -509,432 +945,5 @@ U: Y
 # 999
 P: 999                           EMERGENCY
 T: N
-U: Y
-
-
-# 5 Digit AC + 5 digit Subs
-
-# 0+13873+[2-9]XXXX
-P: 0                             NATIONAL-ACCESS
-P: 13873                         AREA-CODE
-P: [2-9]XXXX                     SUBSCRIBER
-T: N
-
-# 0+15242+[2-9]XXXX
-P: 0                             NATIONAL-ACCESS
-P: 15242                         AREA-CODE
-P: [2-9]XXXX                     SUBSCRIBER
-T: N
-
-# 0+1539[456]+[2-9]XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1539[456]                     AREA-CODE
-P: [2-9]XXXX                     SUBSCRIBER
-T: N
-
-# 0+1697[347]+[2-9]XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1697[347]                     AREA-CODE
-P: [2-9]XXXX                     SUBSCRIBER
-T: N
-
-# 0+1768[347]+[2-9]XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1768[347]                     AREA-CODE
-P: [2-9]XXXX                     SUBSCRIBER
-T: N
-
-# 0+19467+[2-9]XXXX
-P: 0                             NATIONAL-ACCESS
-P: 19467                         AREA-CODE
-P: [2-9]XXXX                     SUBSCRIBER
-T: N
-
-
-# 5 Digit AC + 4 digit Subs
-
-# 0+16977+[23]XXX
-P: 0                             NATIONAL-ACCESS
-P: 16977                         AREA-CODE
-P: [23]XXX                       SUBSCRIBER
-T: N
-U: Y
-
-
-# 4 Digit AC + 5 digit Subs Part 1
-
-# 0+1204+6[1-4]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1204                          AREA-CODE
-P: 6[1-4]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1208+7[2-9]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1208                          AREA-CODE
-P: 7[2-9]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1254+5[1-79]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1254                          AREA-CODE
-P: 5[1-79]XXX                    SUBSCRIBER
-U: Y
-
-# 0+1276+2XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1276                          AREA-CODE
-P: 2XXXX                         SUBSCRIBER
-U: Y
-
-# 0+1276+3[1-8]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1276                          AREA-CODE
-P: 3[1-8]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1276+6[1-6]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1276                          AREA-CODE
-P: 6[1-6]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1297+2[0-4]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1297                          AREA-CODE
-P: 2[0-4]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1297+3[2-5]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1297                          AREA-CODE
-P: 3[2-5]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1298+2[2-8]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1298                          AREA-CODE
-P: 2[2-8]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1298+7[0-47-9]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1298                          AREA-CODE
-P: 7[0-47-9]XXX                  SUBSCRIBER
-U: Y
-
-# 0+1298+8[3-5]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1298                          AREA-CODE
-P: 8[3-5]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1363+8[2-5]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1363                          AREA-CODE
-P: 8[2-5]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1364+7[23]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1364                          AREA-CODE
-P: 7[23]XXX                      SUBSCRIBER
-U: Y
-
-
-# 4 Digit AC + 5 digit Subs Part 2
-
-# 0+1384+7[04-9]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1384                          AREA-CODE
-P: 7[04-9]XXX                    SUBSCRIBER
-U: Y
-
-# 0+1386+4[0157-9]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1386                          AREA-CODE
-P: 4[0157-9]XXX                  SUBSCRIBER
-U: Y
-
-# 0+1404+4[1-7]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1404                          AREA-CODE
-P: 4[1-7]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1420+2[23]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1420                          AREA-CODE
-P: 2[23]XXX                      SUBSCRIBER
-U: Y
-
-# 0+1420+8XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1420                          AREA-CODE
-P: 8XXXX                         SUBSCRIBER
-U: Y
-
-# 0+1460+30XXX
-P: 0                             NATIONAL-ACCESS
-P: 1460                          AREA-CODE
-P: 30XXX                         SUBSCRIBER
-U: Y
-
-# 0+1460+5[2-57]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1460                          AREA-CODE
-P: 5[2-57]XXX                    SUBSCRIBER
-U: Y
-
-# 0+1460+6[1-8]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1460                          AREA-CODE
-P: 6[1-8]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1460+7[2-8]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1460                          AREA-CODE
-P: 7[2-8]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1461+40XXX
-P: 0                             NATIONAL-ACCESS
-P: 1461                          AREA-CODE
-P: 40XXX                         SUBSCRIBER
-U: Y
-
-# 0+1480+52XXX
-P: 0                             NATIONAL-ACCESS
-P: 1480                          AREA-CODE
-P: 52XXX                         SUBSCRIBER
-U: Y
-
-# 0+1488+7[1-3]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1488                          AREA-CODE
-P: 7[1-3]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1524+3[2-79]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1524                          AREA-CODE
-P: 3[2-79]XXX                    SUBSCRIBER
-U: Y
-
-# 0+1524+6XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1524                          AREA-CODE
-P: 6XXXX                         SUBSCRIBER
-U: Y
-
-# 0+1527+6XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1527                          AREA-CODE
-P: 6XXXX                         SUBSCRIBER
-U: Y
-
-
-# 4 Digit AC + 5 digit Subs Part 3
-
-# 0+1562+6[06-9]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1562                          AREA-CODE
-P: 6[06-9]XXX                    SUBSCRIBER
-U: Y
-
-# 0+1566+86XXX
-P: 0                             NATIONAL-ACCESS
-P: 1566                          AREA-CODE
-P: 86XXX                         SUBSCRIBER
-U: Y
-
-# 0+1606+4XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1606                          AREA-CODE
-P: 4XXXX                         SUBSCRIBER
-U: Y
-
-# 0+1606+7[4-79]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1606                          AREA-CODE
-P: 7[4-79]XXX                    SUBSCRIBER
-U: Y
-
-# 0+1629+5[5-7]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1629                          AREA-CODE
-P: 5[5-7]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1635+[34]XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1635                          AREA-CODE
-P: [34]XXXX                      SUBSCRIBER
-U: Y
-
-# 0+1647+24XXX
-P: 0                             NATIONAL-ACCESS
-P: 1647                          AREA-CODE
-P: 24XXX                         SUBSCRIBER
-U: Y
-
-# 0+1647+61XXX
-P: 0                             NATIONAL-ACCESS
-P: 1647                          AREA-CODE
-P: 61XXX                         SUBSCRIBER
-U: Y
-
-# 0+1659+5[08]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1659                          AREA-CODE
-P: 5[08]XXX                      SUBSCRIBER
-U: Y
-
-# 0+1659+6[67]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1659                          AREA-CODE
-P: 6[67]XXX                      SUBSCRIBER
-U: Y
-
-# 0+1659+74XXX
-P: 0                             NATIONAL-ACCESS
-P: 1659                          AREA-CODE
-P: 74XXX                         SUBSCRIBER
-U: Y
-
-# 0+1695+5[0-4]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1695                          AREA-CODE
-P: 5[0-4]XXX                     SUBSCRIBER
-U: Y
-
-
-# 4 Digit AC + 5 digit Subs Part 4
-
-# 0+1726+6[13-9]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1726                          AREA-CODE
-P: 6[13-9]XXX                    SUBSCRIBER
-U: Y
-
-# 0+1726+7[0-7]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1726                          AREA-CODE
-P: 7[0-7]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1744+2XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1744                          AREA-CODE
-P: 2XXXX                         SUBSCRIBER
-U: Y
-
-# 0+1750+2[0-3]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1750                          AREA-CODE
-P: 2[0-3]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1750+[3-68]2XXX
-P: 0                             NATIONAL-ACCESS
-P: 1750                          AREA-CODE
-P: [3-68]2XXX                    SUBSCRIBER
-U: Y
-
-# 0+1750+76XXX
-P: 0                             NATIONAL-ACCESS
-P: 1750                          AREA-CODE
-P: 76XXX                         SUBSCRIBER
-U: Y
-
-# 0+1768+88[234678]XX
-P: 0                             NATIONAL-ACCESS
-P: 1768                          AREA-CODE
-P: 88[234678]XX                  SUBSCRIBER
-U: Y
-
-# 0+1827+[56]XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1827                          AREA-CODE
-P: [56]XXXX                      SUBSCRIBER
-U: Y
-
-# 0+1837+5[2-5]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1837                          AREA-CODE
-P: 5[2-5]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1837+8[239]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1837                          AREA-CODE
-P: 8[239]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1884+3[2-58]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1884                          AREA-CODE
-P: 3[2-58]XXX                    SUBSCRIBER
-U: Y
-
-# 0+1900+6[1-8]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1900                          AREA-CODE
-P: 6[1-8]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1900+85XXX
-P: 0                             NATIONAL-ACCESS
-P: 1900                          AREA-CODE
-P: 85XXX                         SUBSCRIBER
-U: Y
-
-# 0+1905+2XXXX
-P: 0                             NATIONAL-ACCESS
-P: 1905                          AREA-CODE
-P: 2XXXX                         SUBSCRIBER
-U: Y
-
-# 0+1935+83XXX
-P: 0                             NATIONAL-ACCESS
-P: 1935                          AREA-CODE
-P: 83XXX                         SUBSCRIBER
-U: Y
-
-# 0+1946+6[1-8]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1946                          AREA-CODE
-P: 6[1-8]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1949+2[01]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1949                          AREA-CODE
-P: 2[01]XXX                      SUBSCRIBER
-U: Y
-
-# 0+1949+81XXX
-P: 0                             NATIONAL-ACCESS
-P: 1949                          AREA-CODE
-P: 81XXX                         SUBSCRIBER
-U: Y
-
-# 0+1963+23XXX
-P: 0                             NATIONAL-ACCESS
-P: 1963                          AREA-CODE
-P: 23XXX                         SUBSCRIBER
-U: Y
-
-# 0+1963+3[1-4]XXX
-P: 0                             NATIONAL-ACCESS
-P: 1963                          AREA-CODE
-P: 3[1-4]XXX                     SUBSCRIBER
-U: Y
-
-# 0+1995+61XXX
-P: 0                             NATIONAL-ACCESS
-P: 1995                          AREA-CODE
-P: 61XXX                         SUBSCRIBER
 U: Y
 
